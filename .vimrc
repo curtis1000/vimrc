@@ -13,6 +13,10 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'morhetz/gruvbox'
 Bundle 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
+
+" per https://github.com/vim-airline/vim-airline/wiki/FAQ
+set laststatus=2
 
 filetype plugin indent on     " required!
 
@@ -38,9 +42,6 @@ let g:netrw_liststyle=3
 
 " line numbers
 set number
-
-" ruler
-set ruler
 
 " turn off error beeps
 set visualbell
