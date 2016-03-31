@@ -1,0 +1,95 @@
+:so $MYVIMRC
+Reloads the current .vimrc file
+
+gg
+go to top of file
+
+G
+go to bottom of file
+
+o
+create a new line after current line, go into insert mode
+
+O
+create a new line before current line, go into insert mode
+
+w
+jump to next word
+
+e
+jump to next word-ending
+
+A
+jump to end of line and go into insert mode
+
+I
+jump to beginning of line and go into insert mode
+
+u
+Undo last action
+
+dd
+delete current line
+
+v + y + P (or p)
+Copy/Paste (after or before)
+
+:cd ~/projects/myproject/src
+sets the current working directory for the current tab, useful for :E and :Texplore
+
+:Texplore
+Opens explorer in a new tab
+
+:Explore
+Opens explorer in current tab
+
+:vsp
+Vertical split current file
+
+:sp
+Horizontal split current file
+
+control + ww
+move tab focus
+
+command + shift + []
+move tab focus left or right (might be macvim only)
+
+command + w
+close current tab (might be macvim only)
+
+:set ruler
+gives a little line/column counter in the lower right
+
+:35
+jumps to line 35
+
+--------------------
+ Dealing with Files
+--------------------
+
+:file
+print the path of the file in current tab
+
+:open filename.php
+opens a file in the current directory
+
+:saveas <filename>
+Save current file as new filename in the current working directory (check your pwd first!)
+Does not delete the old filename, you have to do that manually (ie :!rm oldfilename)
+
+:pwd
+Print working directory
+
+:! cmd
+run any shell command
+
+-------------------
+ Git Gutter Plugin
+-------------------
+
+]c
+Jump between hunks (next)
+
+[c
+Jump between hunks (prev)
