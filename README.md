@@ -1,7 +1,7 @@
 # vimrc
 My Vim Configuration
 
-Prerequisits
+Prerequisites
 - ```brew install macvim```
 - Install [Powerline Fonts](https://github.com/powerline/fonts)
 - Install [Vundle](https://github.com/VundleVim/Vundle.vim)
