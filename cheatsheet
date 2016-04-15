@@ -31,6 +31,9 @@ Undo last action
 dd
 delete current line
 
+0D
+empty current line
+
 v + y + P (or p)
 Copy/Paste (after or before)
 

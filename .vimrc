@@ -50,6 +50,9 @@ set expandtab
 
 syntax enable
 
+" Put .swp files in a designated place
+set directory=~/tmp
+
 " Display whitespace
 set list listchars=tab:»·,trail:·
 
