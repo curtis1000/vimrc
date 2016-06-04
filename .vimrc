@@ -79,3 +79,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+" custom commands
+" :command <AliasName, starts with capital letter> <string of command to be aliased>
+:command WIW :cd ~/projects/wheniwork/app
