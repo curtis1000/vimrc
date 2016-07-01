@@ -40,6 +40,9 @@ duplicate line
 v + y + P (or p)
 Copy/Paste (after or before)
 
+:m 24
+move the current line after line 24
+
 :cd ~/projects/myproject/src
 sets the current working directory for the current tab, useful for :E and :Texplore
 
@@ -84,6 +87,7 @@ gives a little line/column counter in the lower right
 
 :35
 jumps to line 35
+
 
 ---------------------
  Dealing with Blocks
