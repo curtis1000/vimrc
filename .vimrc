@@ -38,6 +38,9 @@ syntax enable
 " Put .swp files in a designated place
 set directory=~/tmp
 
+" leader key
+let mapleader=","
+
 " Display whitespace
 set list listchars=tab:»·,trail:·
 
@@ -80,6 +83,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-" custom commands
-" :command <AliasName, starts with capital letter> <string of command to be aliased>
-:command WIW :cd ~/projects/wheniwork/app
+" http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html
+" (requires a custom alias for `git url` in ~/.gitconfig)
+nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
