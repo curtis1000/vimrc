@@ -86,3 +86,6 @@ let g:airline_symbols.linenr = ''
 " http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html
 " (requires a custom alias for `git url` in ~/.gitconfig)
 nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
+
+" alias for personal projects
+nnoremap <leader>b :!sh bin/build<CR><CR>
