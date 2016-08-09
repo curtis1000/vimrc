@@ -43,6 +43,9 @@ Copy/Paste (after or before)
 :m 24
 move the current line after line 24
 
+:20,35m 14
+move lines 20...35 after line 14
+
 :cd ~/projects/myproject/src
 sets the current working directory for the current tab, useful for :E and :Texplore
 
