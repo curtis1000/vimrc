@@ -25,6 +25,9 @@ jump to end of line and go into insert mode
 I
 jump to beginning of line and go into insert mode
 
+%
+jump between matching {} [] () /* */
+
 u
 Undo last action
 
