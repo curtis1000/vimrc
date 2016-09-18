@@ -9,24 +9,32 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Run :PluginInstall / :PluginUpdate to install/update packages from github
+" then :so $MYVIMRC to apply
 
-" My Bundles here:
-Bundle 'morhetz/gruvbox'
+" Theme (gruvbox)
+" Bundle 'morhetz/gruvbox'
+" colorscheme gruvbox
+" set background=dark
+
+" Theme (tender)
+Plugin 'jacoborus/tender'
+colorscheme tender
+let g:airline_theme = 'tender'
+
+" GitGutter
 Bundle 'airblade/vim-gitgutter'
+
+" Airline
 Plugin 'vim-airline/vim-airline'
 
 " airline (a derivative of powerline) requires powerline fonts:
 " git@github.com:powerline/fonts.git
-set guifont=Roboto\ Mono\ Light\ for\ Powerline:h18
+set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
 
 " per https://github.com/vim-airline/vim-airline/wiki/FAQ
 set laststatus=2
 
 filetype plugin indent on     " required!
-
-" Theme
-colorscheme gruvbox
-set background=dark
 
 " Softtabs, 4 spaces
 set tabstop=4
