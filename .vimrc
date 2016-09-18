@@ -36,10 +36,13 @@ set laststatus=2
 
 filetype plugin indent on     " required!
 
-" Softtabs, 4 spaces
+" Default tabs, 4 spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Filetype-specific tabs
+autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
 
 syntax enable
 
