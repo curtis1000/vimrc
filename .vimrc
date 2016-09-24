@@ -20,6 +20,7 @@ Bundle 'gmarik/vundle'
 Plugin 'jacoborus/tender'
 colorscheme tender
 let g:airline_theme = 'tender'
+let macvim_skip_colorscheme=1
 
 " GitGutter
 Bundle 'airblade/vim-gitgutter'
@@ -100,3 +101,4 @@ nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<
 
 " alias for personal projects
 nnoremap <leader>b :!sh bin/build<CR><CR>
+
