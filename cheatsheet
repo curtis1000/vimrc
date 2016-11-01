@@ -34,6 +34,9 @@ Undo last action
 dd
 delete current line
 
+dG
+delete current line and all lines below
+
 0D
 empty current line
 
