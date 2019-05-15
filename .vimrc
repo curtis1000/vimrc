@@ -48,7 +48,7 @@ autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
 syntax enable
 
 " Put .swp files in a designated place
-set directory=~/tmp
+set directory=/tmp/vim
 
 " leader key
 let mapleader=","
@@ -94,11 +94,4 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-
-" http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html
-" (requires a custom alias for `git url` in ~/.gitconfig)
-nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
-
-" alias for personal projects
-nnoremap <leader>b :!sh bin/build<CR><CR>
 
