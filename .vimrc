@@ -16,11 +16,22 @@ Bundle 'gmarik/vundle'
 " colorscheme gruvbox
 " set background=dark
 
+" Theme (focuspoint)
+" Bundle 'chase/focuspoint-vim'
+" colorscheme focuspoint
+" set background=dark
+
+" Theme (kuroi)
+Bundle 'aonemd/kuroi.vim'
+colorscheme kuroi
+set background=dark
+set termguicolors
+
 " Theme (tender)
-Plugin 'jacoborus/tender'
-colorscheme tender
-let g:airline_theme = 'tender'
-let macvim_skip_colorscheme=1
+" Plugin 'jacoborus/tender'
+" colorscheme tender
+" let g:airline_theme = 'tender'
+" let macvim_skip_colorscheme=1
 
 " GitGutter
 Bundle 'airblade/vim-gitgutter'
