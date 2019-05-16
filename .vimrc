@@ -16,11 +16,22 @@ Bundle 'gmarik/vundle'
 " colorscheme gruvbox
 " set background=dark
 
+" Theme (focuspoint)
+" Bundle 'chase/focuspoint-vim'
+" colorscheme focuspoint
+" set background=dark
+
+" Theme (kuroi)
+Bundle 'aonemd/kuroi.vim'
+colorscheme kuroi
+set background=dark
+set termguicolors
+
 " Theme (tender)
-Plugin 'jacoborus/tender'
-colorscheme tender
-let g:airline_theme = 'tender'
-let macvim_skip_colorscheme=1
+" Plugin 'jacoborus/tender'
+" colorscheme tender
+" let g:airline_theme = 'tender'
+" let macvim_skip_colorscheme=1
 
 " GitGutter
 Bundle 'airblade/vim-gitgutter'
@@ -48,7 +59,7 @@ autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
 syntax enable
 
 " Put .swp files in a designated place
-set directory=~/tmp
+set directory=/tmp/vim
 
 " leader key
 let mapleader=","
@@ -94,11 +105,4 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-
-" http://felixge.de/2013/08/08/vim-trick-open-current-line-on-github.html
-" (requires a custom alias for `git url` in ~/.gitconfig)
-nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
-
-" alias for personal projects
-nnoremap <leader>b :!sh bin/build<CR><CR>
 

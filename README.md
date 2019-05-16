@@ -2,11 +2,13 @@
 My Vim Configuration
 
 Prerequisites
-- ```brew install macvim```
 - Install [Powerline Fonts](https://github.com/powerline/fonts)
 - Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 Installation
-- clone this repository to ```~/.vim```
-- ```ln -s ~/.vim/.vimrc ~/.vimrc```
-- Open MacVim, run ```:PluginInstall```
+- clone this repository to `~/.vim`
+- `cp ~/.vim/.vimrc ~/.vimrc`
+- mkdir /tmp/vim
+- Run `:PluginInstall` and/or `:PluginUpdate`
+
+Using iterm2 I had to set Profiles > Text > Use a different font for non-ASCII text (Roboto Mono Thin for Powerline ✅ use ligatures), and restart my terminal session.
