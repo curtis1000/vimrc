@@ -46,12 +46,14 @@ set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
 " per https://github.com/vim-airline/vim-airline/wiki/FAQ
 set laststatus=2
 
-filetype plugin indent on     " required!
+" filetype plugin indent on     " required!
 
 " Default tabs, 4 spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+set bs=2
 
 " Filetype-specific tabs
 autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
