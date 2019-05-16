@@ -49,6 +49,12 @@ Copy/Paste (after or before)
 :m 24
 move the current line after line 24
 
+:m+1
+move current line down one line
+
+:m-2
+move current line up one line
+
 :20,35m 14
 move lines 20...35 after line 14
 
