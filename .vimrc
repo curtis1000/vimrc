@@ -76,6 +76,9 @@ set number
 " turn off error beeps
 set visualbell
 
+" integrate yank with clipboard
+set clipboard=unnamed
+
 " airline config
 let g:airline_powerline_fonts = 1
 
