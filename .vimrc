@@ -111,7 +111,17 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-" experimental
+" custom functions!
+
+" :call CheatSheet()
+function! CheatSheet()
+  call system("open https://vim.rtorr.com")
+endfunction
+
+" map F1 key to CheatSheet() in normal mode
+:nnoremap <F1> :call CheatSheet() <CR>
+
+
 " :call RemoteUrl()
 function! RemoteUrl()
   let line = line('.')
@@ -119,5 +129,5 @@ function! RemoteUrl()
   echo "Copied URL to clipboard!"
 endfunction
 
-" map F1 key to the RemoteUrl function in normal mode
-:nnoremap <F1> :call RemoteUrl() <CR>
+" map F2 key to the RemoteUrl function in normal mode
+:nnoremap <F2> :call RemoteUrl() <CR>
