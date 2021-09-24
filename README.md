@@ -8,7 +8,7 @@ Prerequisites
 Installation
 - clone this repository to `~/.vim`
 - `cp ~/.vim/.vimrc ~/.vimrc`
-- mkdir /tmp/vim
+- mkdir ~/.vim-swap
 - Run `:PluginInstall` and/or `:PluginUpdate`
 
 Using iterm2 I had to set Profiles > Text > Use a different font for non-ASCII text (Roboto Mono Thin for Powerline ✅ use ligatures), and restart my terminal session.

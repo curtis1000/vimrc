@@ -61,7 +61,7 @@ autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
 syntax enable
 
 " Put .swp files in a designated place
-set directory=/tmp/vim
+set directory=~/.vim-swap
 
 " leader key
 let mapleader=","
@@ -111,3 +111,13 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+" experimental
+" :call RemoteUrl()
+function! RemoteUrl()
+  let line = line('.')
+  exec 'call system("~/.vim/scripts/remote-url.sh " .  @% . " " . line . " | pbcopy")'
+  echo "Copied URL to clipboard!"
+endfunction
+
+" map F1 key to the RemoteUrl function in normal mode
+:nnoremap <F1> :call RemoteUrl() <CR>
