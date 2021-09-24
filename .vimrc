@@ -61,7 +61,7 @@ autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
 syntax enable
 
 " Put .swp files in a designated place
-set directory=~/.vim-swap
+set directory=~/.vim/swp
 
 " leader key
 let mapleader=","

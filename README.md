@@ -7,7 +7,6 @@ Setup
 - clone this repository to `~/.vim`
 - `cp ~/.vim/.vimrc ~/.vimrc`
 - Install Vundle: `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-- mkdir ~/.vim-swap
 - Run `:PluginInstall` and/or `:PluginUpdate` inside vim
 
 Using iterm2 I had to set Profiles > Text > Use a different font for non-ASCII text (Roboto Mono Thin for Powerline ✅ use ligatures), and restart my terminal session.
