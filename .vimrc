@@ -1,76 +1,39 @@
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+" call :PlugInstall to install plugins
+
+" Theme
+Plug 'aonemd/kuroi.vim'
+
+" GitGutter
+Plug 'airblade/vim-gitgutter'
+
+" Airline
+Plug 'vim-airline/vim-airline'
+
+" Initialize plugin system
+call plug#end()
+
+" General Editor Tweaks
 set nocompatible               " be iMproved
-filetype off                   " required!
+syntax enable
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+" Put .swp files in a designated place
+set directory=/tmp
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" Run :PluginInstall / :PluginUpdate to install/update packages from github
-" then :so $MYVIMRC to apply
-
-" Theme (gruvbox)
-" Bundle 'morhetz/gruvbox'
-" colorscheme gruvbox
-" set background=dark
-
-" Theme (focuspoint)
-" Bundle 'chase/focuspoint-vim'
-" colorscheme focuspoint
-" set background=dark
-
-" Theme (kuroi)
-Bundle 'aonemd/kuroi.vim'
+" Theme setup
 colorscheme kuroi
 set background=dark
 set termguicolors
 
-" Theme (tender)
-" Plugin 'jacoborus/tender'
-" colorscheme tender
-" let g:airline_theme = 'tender'
-" let macvim_skip_colorscheme=1
-
-" GitGutter
-Bundle 'airblade/vim-gitgutter'
-
-" Airline
-Plugin 'vim-airline/vim-airline'
-
-" airline (a derivative of powerline) requires powerline fonts:
-" git@github.com:powerline/fonts.git
-set guifont=Roboto\ Mono\ Light\ for\ Powerline:h16
-
-" per https://github.com/vim-airline/vim-airline/wiki/FAQ
-set laststatus=2
-
-" filetype plugin indent on     " required!
-
-" Default tabs, 4 spaces
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-set bs=2
-
-" Filetype-specific tabs
-autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
-
-syntax enable
-
-" Put .swp files in a designated place
-set directory=~/.vim/swp
-
-" leader key
-let mapleader=","
-
 " Display whitespace
 set list listchars=tab:»·,trail:·
-
-" Explorer Mode Display Tweaks (tree view)
-let g:netrw_liststyle=3
 
 " line numbers
 set number
@@ -80,6 +43,14 @@ set visualbell
 
 " integrate yank with clipboard
 set clipboard=unnamed
+
+" Default tabs, 4 spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Filetype-specific tabs
+autocmd BufRead,BufNewFile *.rb,*.scss setlocal shiftwidth=2 tabstop=2
 
 " airline config
 let g:airline_powerline_fonts = 1
@@ -120,7 +91,6 @@ endfunction
 
 " map F1 key to CheatSheet() in normal mode
 :nnoremap <F1> :call CheatSheet() <CR>
-
 
 " :call RemoteUrl()
 function! RemoteUrl()
