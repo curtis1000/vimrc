@@ -17,6 +17,9 @@ Plug 'airblade/vim-gitgutter'
 " Airline
 Plug 'vim-airline/vim-airline'
 
+" Elixir Support
+" Plug 'elixir-editors/vim-elixir'
+
 " Initialize plugin system
 call plug#end()
 
