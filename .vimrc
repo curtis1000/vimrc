@@ -10,12 +10,14 @@ call plug#begin()
 
 " Theme
 Plug 'aonemd/kuroi.vim'
+Plug 'lifepillar/vim-solarized8'
 
 " GitGutter
 Plug 'airblade/vim-gitgutter'
 
 " Airline
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes' " makes airline inherit theme colors
 
 " Elixir Support
 " Plug 'elixir-editors/vim-elixir'
@@ -31,8 +33,12 @@ syntax enable
 set directory=/tmp
 
 " Theme setup
-colorscheme kuroi
-set background=dark
+" There's a couple options here, kuroi/dark or solarized8 light/dark
+" look nice depending on what you're feeling
+" colorscheme kuroi
+colorscheme solarized8
+set background=light
+"set background=dark
 set termguicolors
 
 " Display whitespace
