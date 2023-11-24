@@ -35,10 +35,11 @@ set directory=/tmp
 " Theme setup
 " There's a couple options here, kuroi/dark or solarized8 light/dark
 " look nice depending on what you're feeling
-" colorscheme kuroi
-colorscheme solarized8
-set background=light
-"set background=dark
+colorscheme kuroi
+" colorscheme solarized8
+" set background=light
+set background=dark
+
 set termguicolors
 
 " Display whitespace
